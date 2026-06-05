@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Pacto Corrupto del Perú</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <p class="subtitle">Un ROM Hack de Pokémon Rojo</p>
+      <h1>El Pacto Corrupto del Perú</h1>
+      <p class="tagline">Cinco políticos. Seis Pokémon. Una sola oportunidad de hacerles justicia.</p>
+      <div class="header-buttons">
+        <a href="#play" class="btn btn-primary">Jugar Demo</a>
+        <a href="#download" class="btn btn-secondary">Descargar Parche</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2>Sobre el Juego</h2>
+      <p>
+        <strong>El Pacto Corrupto del Perú</strong> es un ROM hack de Pokémon Rojo construido sobre el
+        desensamblaje de código abierto <em>pret/pokered</em>. Desde una entrada secreta en Pueblo Paleta,
+        enfrentarás a cinco de los políticos más corruptos de la historia peruana en batallas al estilo del
+        Alto Mando Pokémon.
+      </p>
+      <p>
+        Cada NPC en el pasillo de entrada te entrega un Pokémon de nivel 50 junto con el testimonio
+        del crimen del siguiente rival. Al final del corredor te espera el jefe final — con la
+        música del Campeón sonando de fondo.
+      </p>
+      <div class="trainers">
+        <div class="trainer-card">
+          <span class="trainer-icon">⚖️</span>
+          <strong>Alan García</strong>
+          <small>Corrupción y deuda externa</small>
+        </div>
+        <div class="trainer-card">
+          <span class="trainer-icon">🕵️</span>
+          <strong>Vladimiro Montesinos</strong>
+          <small>Espionaje y narcotráfico</small>
+        </div>
+        <div class="trainer-card">
+          <span class="trainer-icon">💰</span>
+          <strong>Alejandro Toledo</strong>
+          <small>Sobornos y lavado de activos</small>
+        </div>
+        <div class="trainer-card">
+          <span class="trainer-icon">👁️</span>
+          <strong>Alberto Fujimori</strong>
+          <small>Autoritarismo y crímenes de Estado</small>
+        </div>
+        <div class="trainer-card highlight">
+          <span class="trainer-icon">👑</span>
+          <strong>Keiko Fujimori</strong>
+          <small>Jefa Final — Financiamiento ilegal</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="play" id="play">
+    <div class="container">
+      <h2>Jugar en el Navegador</h2>
+      <p class="play-note">
+        Demo completa. Usa las teclas de flecha para moverte, <kbd>Z</kbd> para A, <kbd>X</kbd> para B,
+        <kbd>Enter</kbd> para Start.
+      </p>
+      <div id="game"></div>
+      <p class="disclaimer">
+        * Este es un proyecto de fan sin fines de lucro. Se requiere una copia legítima de Pokémon Rojo
+        para aplicar el parche completo.
+      </p>
+    </div>
+  </section>
+
+  <section class="download" id="download">
+    <div class="container">
+      <h2>Descargar Parche</h2>
+      <p>
+        Descarga el archivo <code>.bps</code> y aplícalo a tu propia copia de
+        <strong>Pokémon Red (USA/Europe)</strong> usando
+        <a href="https://github.com/Alcaro/Flips" target="_blank" rel="noopener">Floating IPS (flips)</a>.
+      </p>
+      <a href="corrupt_league.bps" class="btn btn-primary" download>Descargar Parche (.bps)</a>
+      <div class="instructions">
+        <h3>Instrucciones</h3>
+        <ol>
+          <li>Descarga <a href="https://github.com/Alcaro/Flips/releases" target="_blank" rel="noopener">Floating IPS</a></li>
+          <li>Abre Floating IPS y selecciona <em>"Apply Patch"</em></li>
+          <li>Selecciona <code>corrupt_league.bps</code></li>
+          <li>Selecciona tu ROM de Pokémon Rojo (<code>pokered.gbc</code>)</li>
+          <li>Abre el ROM resultante en tu emulador favorito</li>
+          <li>Ve a la esquina suroeste de Pueblo Paleta para encontrar la entrada secreta</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>
+        Proyecto de sátira política. Fan game sin fines de lucro — no afiliado a Nintendo ni a Game Freak.
+        Construido con <a href="https://github.com/pret/pokered" target="_blank" rel="noopener">pret/pokered</a>
+        y <a href="https://rgbds.gbdev.io/" target="_blank" rel="noopener">RGBDS</a>.
+      </p>
+    </div>
+  </footer>
+
+  <!-- EmulatorJS -->
+  <script>
+    EJS_player    = '#game';
+    EJS_core      = 'gb';
+    EJS_gameUrl   = 'pokered_corrupt.gbc';
+    EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
+    EJS_language  = 'es';
+  </script>
+  <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+
+</body>
+</html>
