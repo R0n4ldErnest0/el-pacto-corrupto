@@ -248,6 +248,21 @@ code {
   color: var(--gold);
 }
 
+/* Author section */
+.author {
+  background: linear-gradient(180deg, var(--darker) 0%, #0a0a1a 100%);
+}
+
+.author-inner {
+  max-width: 640px;
+}
+
+.author-inner p {
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
 /* Footer */
 footer {
   padding: 2rem 1.5rem;
