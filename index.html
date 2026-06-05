@@ -8,57 +8,86 @@
 </head>
 <body>
 
+  <nav class="topnav">
+    <span class="site-label">El Pacto Corrupto del Perú</span>
+    <button class="lang-toggle" id="langBtn" onclick="toggleLang()">EN</button>
+  </nav>
+
   <header>
     <div class="header-inner">
-      <p class="subtitle">Un ROM Hack de Pokémon Rojo</p>
+      <p class="subtitle" data-es="Un ROM Hack de Pokémon Rojo" data-en="A Pokémon Red ROM Hack">Un ROM Hack de Pokémon Rojo</p>
       <h1>El Pacto Corrupto del Perú</h1>
-      <p class="tagline">Cinco políticos. Seis Pokémon. Una sola oportunidad de hacerles justicia.</p>
+      <p class="tagline"
+         data-es="Cinco políticos. Seis Pokémon. Una sola oportunidad de hacerles justicia."
+         data-en="Five politicians. Six Pokémon. One chance to make them pay.">
+        Cinco políticos. Seis Pokémon. Una sola oportunidad de hacerles justicia.
+      </p>
       <div class="header-buttons">
-        <a href="#play" class="btn btn-primary">Jugar Demo</a>
-        <a href="#download" class="btn btn-secondary">Descargar Parche</a>
+        <a href="#play" class="btn btn-primary" data-es="Jugar Demo" data-en="Play Demo">Jugar Demo</a>
+        <a href="#download" class="btn btn-secondary" data-es="Descargar Parche" data-en="Download Patch">Descargar Parche</a>
       </div>
     </div>
   </header>
 
+  <section class="context">
+    <div class="container">
+      <h2 data-es="¿Por qué este juego?" data-en="Why this game?">¿Por qué este juego?</h2>
+      <p data-es="En las últimas décadas, el Perú ha sido escenario de una de las crisis de corrupción más profundas de América Latina. Presidentes elegidos democráticamente han terminado en prisión, como prófugos, o bajo investigación por millones en sobornos, lavado de activos y crímenes de Estado."
+         data-en="In recent decades, Peru has been the scene of one of the deepest corruption crises in Latin America. Democratically elected presidents have ended up in prison, as fugitives, or under investigation for millions in bribes, money laundering, and crimes of State.">
+        En las últimas décadas, el Perú ha sido escenario de una de las crisis de corrupción más profundas de América Latina. Presidentes elegidos democráticamente han terminado en prisión, como prófugos, o bajo investigación por millones en sobornos, lavado de activos y crímenes de Estado.
+      </p>
+      <p data-es="Alan García. Vladimiro Montesinos. Alejandro Toledo. Alberto Fujimori. Keiko Fujimori. Nombres que marcaron generaciones y traicionaron la confianza de millones de peruanos que creyeron en un país mejor."
+         data-en="Alan García. Vladimiro Montesinos. Alejandro Toledo. Alberto Fujimori. Keiko Fujimori. Names that defined generations and betrayed the trust of millions of Peruvians who believed in a better country.">
+        Alan García. Vladimiro Montesinos. Alejandro Toledo. Alberto Fujimori. Keiko Fujimori. Nombres que marcaron generaciones y traicionaron la confianza de millones de peruanos que creyeron en un país mejor.
+      </p>
+      <blockquote data-es="Este juego nació de esa frustración — y de una convicción: la verdadera batalla no se libra con Pokémon. Se libra en las urnas de votación."
+                  data-en="This game was born from that frustration — and from a conviction: the real battle is not fought with Pokémon. It is fought at the ballot box.">
+        Este juego nació de esa frustración — y de una convicción: la verdadera batalla no se libra con Pokémon. Se libra en las urnas de votación.
+      </blockquote>
+    </div>
+  </section>
+
   <section class="about">
     <div class="container">
-      <h2>Sobre el Juego</h2>
-      <p>
+      <h2 data-es="Sobre el Juego" data-en="About the Game">Sobre el Juego</h2>
+      <p data-es="&lt;strong&gt;El Pacto Corrupto del Perú&lt;/strong&gt; es un ROM hack de Pokémon Rojo construido sobre el desensamblaje de código abierto &lt;em&gt;pret/pokered&lt;/em&gt;. Desde una entrada secreta en Pueblo Paleta, enfrentarás a cinco de los políticos más corruptos de la historia peruana en batallas al estilo del Alto Mando Pokémon."
+         data-en="&lt;strong&gt;El Pacto Corrupto del Perú&lt;/strong&gt; is a Pokémon Red ROM hack built on the open-source disassembly &lt;em&gt;pret/pokered&lt;/em&gt;. From a secret entrance in Pallet Town, you face five of the most corrupt politicians in Peruvian history in Elite Four-style battles.">
         <strong>El Pacto Corrupto del Perú</strong> es un ROM hack de Pokémon Rojo construido sobre el
         desensamblaje de código abierto <em>pret/pokered</em>. Desde una entrada secreta en Pueblo Paleta,
         enfrentarás a cinco de los políticos más corruptos de la historia peruana en batallas al estilo del
         Alto Mando Pokémon.
       </p>
-      <p>
+      <p data-es="Cada NPC en el pasillo de entrada te entrega un Pokémon de nivel 50 junto con el testimonio del crimen del siguiente rival. Al final del corredor te espera la jefa final — con la música del Campeón sonando de fondo."
+         data-en="Each NPC in the entrance hall hands you a level 50 Pokémon along with testimony about the next rival's crimes. At the end of the corridor, the final boss awaits — with the Champion theme playing in the background.">
         Cada NPC en el pasillo de entrada te entrega un Pokémon de nivel 50 junto con el testimonio
-        del crimen del siguiente rival. Al final del corredor te espera el jefe final — con la
+        del crimen del siguiente rival. Al final del corredor te espera la jefa final — con la
         música del Campeón sonando de fondo.
       </p>
       <div class="trainers">
         <div class="trainer-card">
           <span class="trainer-icon">⚖️</span>
           <strong>Alan García</strong>
-          <small>Corrupción y deuda externa</small>
+          <small data-es="Corrupción y deuda externa" data-en="Corruption and foreign debt">Corrupción y deuda externa</small>
         </div>
         <div class="trainer-card">
           <span class="trainer-icon">🕵️</span>
           <strong>Vladimiro Montesinos</strong>
-          <small>Espionaje y narcotráfico</small>
+          <small data-es="Espionaje y narcotráfico" data-en="Espionage and drug trafficking">Espionaje y narcotráfico</small>
         </div>
         <div class="trainer-card">
           <span class="trainer-icon">💰</span>
           <strong>Alejandro Toledo</strong>
-          <small>Sobornos y lavado de activos</small>
+          <small data-es="Sobornos y lavado de activos" data-en="Bribery and money laundering">Sobornos y lavado de activos</small>
         </div>
         <div class="trainer-card">
           <span class="trainer-icon">👁️</span>
           <strong>Alberto Fujimori</strong>
-          <small>Autoritarismo y crímenes de Estado</small>
+          <small data-es="Autoritarismo y crímenes de Estado" data-en="Authoritarianism and crimes of State">Autoritarismo y crímenes de Estado</small>
         </div>
         <div class="trainer-card highlight">
           <span class="trainer-icon">👑</span>
           <strong>Keiko Fujimori</strong>
-          <small>Jefa Final — Financiamiento ilegal</small>
+          <small data-es="Jefa Final — Financiamiento ilegal" data-en="Final Boss — Illegal campaign financing">Jefa Final — Financiamiento ilegal</small>
         </div>
       </div>
     </div>
@@ -66,13 +95,17 @@
 
   <section class="play" id="play">
     <div class="container">
-      <h2>Jugar en el Navegador</h2>
-      <p class="play-note">
+      <h2 data-es="Jugar en el Navegador" data-en="Play in Browser">Jugar en el Navegador</h2>
+      <p class="play-note"
+         data-es="Demo completa. Usa las teclas de flecha para moverte, Z para A, X para B, Enter para Start."
+         data-en="Full demo. Use arrow keys to move, Z for A, X for B, Enter for Start.">
         Demo completa. Usa las teclas de flecha para moverte, <kbd>Z</kbd> para A, <kbd>X</kbd> para B,
         <kbd>Enter</kbd> para Start.
       </p>
       <div id="game"></div>
-      <p class="disclaimer">
+      <p class="disclaimer"
+         data-es="* Proyecto de fan sin fines de lucro. Se requiere una copia legítima de Pokémon Rojo para aplicar el parche completo."
+         data-en="* Non-profit fan project. A legitimate copy of Pokémon Red is required to apply the full patch.">
         * Este es un proyecto de fan sin fines de lucro. Se requiere una copia legítima de Pokémon Rojo
         para aplicar el parche completo.
       </p>
@@ -81,22 +114,28 @@
 
   <section class="download" id="download">
     <div class="container">
-      <h2>Descargar Parche</h2>
-      <p>
+      <h2 data-es="Descargar Parche" data-en="Download Patch">Descargar Parche</h2>
+      <p data-es="Descarga el archivo .bps y aplícalo a tu propia copia de Pokémon Red (USA/Europe) usando Floating IPS."
+         data-en="Download the .bps file and apply it to your own copy of Pokémon Red (USA/Europe) using Floating IPS.">
         Descarga el archivo <code>.bps</code> y aplícalo a tu propia copia de
         <strong>Pokémon Red (USA/Europe)</strong> usando
         <a href="https://github.com/Alcaro/Flips" target="_blank" rel="noopener">Floating IPS (flips)</a>.
       </p>
-      <a href="corrupt_league.bps" class="btn btn-primary" download>Descargar Parche (.bps)</a>
+      <a href="corrupt_league.bps" class="btn btn-primary" download
+         data-es="Descargar Parche (.bps)" data-en="Download Patch (.bps)">Descargar Parche (.bps)</a>
       <div class="instructions">
-        <h3>Instrucciones</h3>
-        <ol>
-          <li>Descarga <a href="https://github.com/Alcaro/Flips/releases" target="_blank" rel="noopener">Floating IPS</a></li>
-          <li>Abre Floating IPS y selecciona <em>"Apply Patch"</em></li>
-          <li>Selecciona <code>corrupt_league.bps</code></li>
-          <li>Selecciona tu ROM de Pokémon Rojo (<code>pokered.gbc</code>)</li>
-          <li>Abre el ROM resultante en tu emulador favorito</li>
-          <li>Ve a la esquina suroeste de Pueblo Paleta para encontrar la entrada secreta</li>
+        <h3 data-es="Instrucciones" data-en="Instructions">Instrucciones</h3>
+        <ol id="instructions-list">
+          <li data-es="Descarga Floating IPS" data-en="Download Floating IPS">
+            Descarga <a href="https://github.com/Alcaro/Flips/releases" target="_blank" rel="noopener">Floating IPS</a>
+          </li>
+          <li data-es='Abre Floating IPS y selecciona "Apply Patch"' data-en='Open Floating IPS and select "Apply Patch"'>
+            Abre Floating IPS y selecciona <em>"Apply Patch"</em>
+          </li>
+          <li data-es="Selecciona corrupt_league.bps" data-en="Select corrupt_league.bps">Selecciona <code>corrupt_league.bps</code></li>
+          <li data-es="Selecciona tu ROM de Pokémon Rojo (pokered.gbc)" data-en="Select your Pokémon Red ROM (pokered.gbc)">Selecciona tu ROM de Pokémon Rojo (<code>pokered.gbc</code>)</li>
+          <li data-es="Abre el ROM resultante en tu emulador favorito" data-en="Open the resulting ROM in your favourite emulator">Abre el ROM resultante en tu emulador favorito</li>
+          <li data-es="Ve a la esquina suroeste de Pueblo Paleta para encontrar la entrada secreta" data-en="Go to the southwest corner of Pallet Town to find the secret entrance">Ve a la esquina suroeste de Pueblo Paleta para encontrar la entrada secreta</li>
         </ol>
       </div>
     </div>
@@ -104,8 +143,10 @@
 
   <footer>
     <div class="container">
-      <p>
-        Proyecto de sátira política. Fan game sin fines de lucro — no afiliado a Nintendo ni a Game Freak.
+      <p data-es="Hecho por Ronald Ernesto — Proyecto de sátira política sin fines de lucro, no afiliado a Nintendo ni a Game Freak. Construido con pret/pokered y RGBDS."
+         data-en="Made by Ronald Ernesto — Political satire fan project, not affiliated with Nintendo or Game Freak. Built with pret/pokered and RGBDS.">
+        Hecho por <strong>Ronald Ernesto</strong> —
+        Proyecto de sátira política sin fines de lucro, no afiliado a Nintendo ni a Game Freak.
         Construido con <a href="https://github.com/pret/pokered" target="_blank" rel="noopener">pret/pokered</a>
         y <a href="https://rgbds.gbdev.io/" target="_blank" rel="noopener">RGBDS</a>.
       </p>
@@ -114,13 +155,28 @@
 
   <!-- EmulatorJS -->
   <script>
-    EJS_player    = '#game';
-    EJS_core      = 'gbc';
-    EJS_gameUrl   = 'pokered_corrupt.gbc';
+    EJS_player     = '#game';
+    EJS_core       = 'gbc';
+    EJS_gameUrl    = 'pokered_corrupt.gbc';
     EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
-    EJS_language  = 'es';
+    EJS_language   = 'es';
   </script>
   <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+
+  <script>
+    var currentLang = 'es';
+
+    function toggleLang() {
+      currentLang = currentLang === 'es' ? 'en' : 'es';
+      document.getElementById('langBtn').textContent = currentLang === 'es' ? 'EN' : 'ES';
+      document.documentElement.lang = currentLang;
+
+      document.querySelectorAll('[data-es][data-en]').forEach(function(el) {
+        var text = el.getAttribute('data-' + currentLang);
+        if (text) el.innerHTML = text;
+      });
+    }
+  </script>
 
 </body>
 </html>
