@@ -248,6 +248,57 @@ code {
   color: var(--gold);
 }
 
+/* How to play box */
+.howto {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 6px 6px 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.howto h3 {
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+
+.howto p {
+  margin: 0;
+  color: var(--text);
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--card);
+  color: var(--text);
+  font-size: 0.9rem;
+  transition: border-color 0.15s, color 0.15s;
+  text-decoration: none;
+}
+.social-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+}
+.social-btn span {
+  font-weight: 700;
+  color: var(--gold);
+}
+
 /* Author section */
 .author {
   background: linear-gradient(180deg, var(--darker) 0%, #0a0a1a 100%);
