@@ -190,6 +190,48 @@ p { margin-bottom: 1rem; }
 .trainer-card strong { font-size: 0.95rem; color: #fff; }
 .trainer-card small  { font-size: 0.75rem; color: var(--muted); }
 
+/* Final message teaser */
+.final-message {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+}
+.final-icon { font-size: 1.8rem; line-height: 1; }
+.final-message p { margin: 0; }
+.final-message strong { color: var(--gold); }
+
+/* Screenshots gallery */
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+.shots figure {
+  margin: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+.shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  image-rendering: pixelated;
+}
+.shots figcaption {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
 /* Emulator */
 .play { background: var(--dark); }
 
