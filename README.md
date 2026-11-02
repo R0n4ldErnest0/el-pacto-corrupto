@@ -85,6 +85,13 @@ Cada rival tiene su propio diálogo antes y después de la pelea.
 |---|---|
 | <img src="screenshots/03-garcia-dialogo.png" width="320" alt="¡Yo lo di todo por este país!"> | <img src="screenshots/05-batalla-lanzallamas.png" width="320" alt="Charizard usa Lanzallamas"> |
 
+Los demás rivales también tienen su propio diálogo y su propio equipo:
+
+| Montesinos | Toledo |
+|---|---|
+| <img src="screenshots/06-montesinos-dialogo.png" width="320" alt="El poder real no se vota... se compra."> | <img src="screenshots/08-toledo-dialogo.png" width="320" alt="¿Firmas falsas? Fue otra persona."> |
+| <img src="screenshots/07-montesinos-batalla.png" width="320" alt="MONTESINOS wants to fight!"> | <img src="screenshots/09-toledo-batalla.png" width="320" alt="Charizard usa Lanzallamas contra el Snorlax de Toledo"> |
+
 **3. El final.** 🗳️ Al derrotar a los cinco te espera un **mensaje especial
 sobre la importancia de votar con conciencia**, porque la batalla real no se
 juega aquí. No te lo spoileamos: tendrás que ganarte la liga para leerlo.
@@ -176,6 +183,11 @@ Town you go straight into **The Corrupt Pact**.
 | Keiko Fujimori | **Final boss**: illegal campaign financing (with the Champion theme) |
 
    Each rival has their own dialogue before and after the battle.
+
+| García | Montesinos | Toledo |
+|---|---|---|
+| <img src="screenshots/03-garcia-dialogo.png" width="240" alt="García"> | <img src="screenshots/06-montesinos-dialogo.png" width="240" alt="Montesinos"> | <img src="screenshots/08-toledo-dialogo.png" width="240" alt="Toledo"> |
+| <img src="screenshots/04-garcia-batalla.png" width="240" alt="García battle"> | <img src="screenshots/07-montesinos-batalla.png" width="240" alt="Montesinos battle"> | <img src="screenshots/09-toledo-batalla.png" width="240" alt="Toledo battle"> |
 3. **The ending.** 🗳️ After beating all five, a **special message about the
    importance of voting wisely** awaits you, because the real battle isn't
    played here. No spoilers: you'll have to beat the league to read it.
